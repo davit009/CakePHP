@@ -1,0 +1,591 @@
+2025-09-24 21:16:05 debug: connection= role=write duration=0.1 rows=0 USE `examenes_db`
+2025-09-24 21:16:05 debug: connection= role=write duration=0.6 rows=0 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:16:05 debug: connection= role=write duration=0.5 rows=0 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:16:05 debug: connection= role=write duration=0.3 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'examenes_db'
+2025-09-24 21:16:06 debug: connection= role=write duration=12.7 rows=0 CREATE TABLE `phinxlog` (`version` BIGINT NOT NULL, `migration_name` VARCHAR(100), `start_time` TIMESTAMP NULL, `end_time` TIMESTAMP NULL, `breakpoint` BOOLEAN NOT NULL DEFAULT FALSE, PRIMARY KEY (`version`)) ENGINE = InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+2025-09-24 21:16:06 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:16:06 debug: connection= role=write duration=23.2 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:16:06 debug: connection= role=write duration=2.6 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:16:06 debug: connection= role=write duration=0.4 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:16:06 debug: connection= role=write duration=0.2 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:16:06 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:21:07 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:21:07 debug: connection= role=write duration=0.5 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:21:07 debug: connection= role=write duration=10.7 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:07 debug: connection= role=write duration=2.8 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:07 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:21:07 debug: connection= role=write duration=0.4 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:21:07 debug: connection= role=write duration=8 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:07 debug: connection= role=write duration=2.8 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:07 debug: connection= role=write duration=0.3 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:21:07 debug: connection= role=write duration=0.5 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:21:17 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:21:17 debug: connection= role=write duration=0.4 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:21:17 debug: connection= role=write duration=10.4 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:17 debug: connection= role=write duration=3 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:17 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:21:17 debug: connection= role=write duration=0.5 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:21:17 debug: connection= role=write duration=3.2 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:17 debug: connection= role=write duration=3.2 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:21:17 debug: connection= role=write duration=0.3 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:21:17 debug: connection= role=write duration=0.2 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:21:17 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:21:17 debug: connection= role=write duration=0.4 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'examenes_db'
+2025-09-24 21:21:18 debug: connection= role=write duration=31.8 rows=0 CREATE TABLE `users` (`id` INTEGER NOT NULL AUTO_INCREMENT, `email` VARCHAR(190) NOT NULL, `password` VARCHAR(255) NOT NULL, `role` VARCHAR(30) NOT NULL DEFAULT 'usuariobase', `active` BOOLEAN NOT NULL DEFAULT TRUE, `created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, `modified` DATETIME, PRIMARY KEY (`id`),  UNIQUE KEY `IDX_USERS_EMAIL_UNQ` (`email`)) ENGINE = InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+2025-09-24 21:21:18 debug: connection= role=write duration=2 rows=1 INSERT INTO `phinxlog` (`version`, `migration_name`, `start_time`, `end_time`, `breakpoint`) VALUES ('20250924205534', 'CreateUsers', '2025-09-24 21:21:17', '2025-09-24 21:21:18', '0');
+2025-09-24 21:21:18 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:22:27 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:22:27 debug: connection= role=write duration=0.8 rows=2 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:22:27 debug: connection= role=write duration=18.5 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:27 debug: connection= role=write duration=2.6 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:27 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:22:27 debug: connection= role=write duration=0.7 rows=2 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:22:27 debug: connection= role=write duration=2.7 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:27 debug: connection= role=write duration=2.6 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:27 debug: connection= role=write duration=0.5 rows=1 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:22:27 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:22:27 debug: connection= role=write duration=11.3 rows=0 DROP TABLE `users`;
+2025-09-24 21:22:27 debug: connection= role=write duration=2.5 rows=1 DELETE FROM `phinxlog` WHERE `version` = '20250924205534';
+2025-09-24 21:22:27 debug: connection= role=write duration=0.5 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:22:34 debug: connection= role=write duration=0.1 rows=0 USE `examenes_db`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.3 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:22:34 debug: connection= role=write duration=17.1 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:34 debug: connection= role=write duration=7.4 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.3 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:22:34 debug: connection= role=write duration=2.4 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:34 debug: connection= role=write duration=2.7 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.3 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:22:34 debug: connection= role=write duration=0.2 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:22:34 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:22:34 debug: connection= role=write duration=0.4 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'examenes_db'
+2025-09-24 21:22:34 debug: connection= role=write duration=24 rows=0 CREATE TABLE `users` (`id` INTEGER NOT NULL AUTO_INCREMENT, `email` VARCHAR(190) NOT NULL, `password` VARCHAR(255) NOT NULL, `role` VARCHAR(30) NOT NULL DEFAULT 'usuariobase', `active` BOOLEAN NOT NULL DEFAULT TRUE, `created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, `modified` DATETIME, PRIMARY KEY (`id`),  UNIQUE KEY `IDX_USERS_EMAIL_UNQ` (`email`)) ENGINE = InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+2025-09-24 21:22:34 debug: connection= role=write duration=1.9 rows=1 INSERT INTO `phinxlog` (`version`, `migration_name`, `start_time`, `end_time`, `breakpoint`) VALUES ('20250924205534', 'CreateUsers', '2025-09-24 21:22:34', '2025-09-24 21:22:34', '0');
+2025-09-24 21:22:34 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:22:34 debug: connection= role=write duration=0.3 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'examenes_db'
+2025-09-24 21:22:34 debug: connection= role=write duration=25 rows=0 CREATE TABLE `reactivos` (`id` INTEGER NOT NULL AUTO_INCREMENT, `pregunta` TEXT NOT NULL, `respuesta_a` VARCHAR(255) NOT NULL, `respuesta_b` VARCHAR(255) NOT NULL, `respuesta_c` VARCHAR(255) NOT NULL, `respuesta_correcta` VARCHAR(1) NOT NULL, `retroalimentacion` TEXT, `dificultad` INTEGER NOT NULL DEFAULT 1, `area_especialidad` VARCHAR(120) NOT NULL, `subespecialidad` VARCHAR(120) NOT NULL, `user_id` INTEGER NOT NULL, `created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, `modified` DATETIME, PRIMARY KEY (`id`),  KEY `IDX_REAC_RC_DIF` (`respuesta_correcta`,`dificultad`),  KEY `IDX_REAC_USER_ID` (`user_id`)) ENGINE = InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+2025-09-24 21:22:34 debug: connection= role=write duration=1.9 rows=1 INSERT INTO `phinxlog` (`version`, `migration_name`, `start_time`, `end_time`, `breakpoint`) VALUES ('20250924205725', 'CreateReactivos', '2025-09-24 21:22:34', '2025-09-24 21:22:34', '0');
+2025-09-24 21:22:34 debug: connection= role=write duration=1.4 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:22:34 debug: connection= role=write duration=3.7 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.5 rows=4 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:22:34 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:22:34 debug: connection= role=write duration=3.4 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:22:34 debug: connection= role=write duration=0.5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:22:34 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:23:51 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:23:51 debug: connection= role=write duration=0.4 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:23:51 debug: connection= role=write duration=10.2 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:23:51 debug: connection= role=write duration=2.4 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:23:51 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:23:51 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:23:51 debug: connection= role=write duration=2.4 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:23:51 debug: connection= role=write duration=2.8 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:23:51 debug: connection= role=write duration=0.3 rows=2 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:28:19 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:28:19 debug: connection= role=write duration=0.4 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:28:19 debug: connection= role=write duration=11.2 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:19 debug: connection= role=write duration=2.6 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:19 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:28:19 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:28:19 debug: connection= role=write duration=8.1 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:19 debug: connection= role=write duration=2.7 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:19 debug: connection= role=write duration=0.3 rows=2 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:28:19 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:28:19 debug: connection= role=write duration=8.3 rows=0 DROP TABLE `reactivos`;
+2025-09-24 21:28:19 debug: connection= role=write duration=2.4 rows=1 DELETE FROM `phinxlog` WHERE `version` = '20250924205725';
+2025-09-24 21:28:19 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:28:19 debug: connection= role=write duration=8.3 rows=0 DROP TABLE `users`;
+2025-09-24 21:28:19 debug: connection= role=write duration=2.2 rows=1 DELETE FROM `phinxlog` WHERE `version` = '20250924205534';
+2025-09-24 21:28:19 debug: connection= role=write duration=0.6 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:28:27 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.5 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:28:27 debug: connection= role=write duration=19 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:27 debug: connection= role=write duration=3.6 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.3 rows=0 USE `examenes_db`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.5 rows=1 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:28:27 debug: connection= role=write duration=3 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:27 debug: connection= role=write duration=2.7 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.3 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:28:27 debug: connection= role=write duration=0.2 rows=0 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:28:27 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:28:27 debug: connection= role=write duration=0.5 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'examenes_db'
+2025-09-24 21:28:27 debug: connection= role=write duration=24.5 rows=0 CREATE TABLE `users` (`id` INTEGER NOT NULL AUTO_INCREMENT, `email` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `role` VARCHAR(50) NOT NULL DEFAULT 'usuariobase', `active` BOOLEAN NOT NULL DEFAULT TRUE, `created` DATETIME, `modified` DATETIME, PRIMARY KEY (`id`),  UNIQUE KEY `UNQ_USERS_EMAIL` (`email`)) ENGINE = InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+2025-09-24 21:28:27 debug: connection= role=write duration=2.2 rows=1 INSERT INTO `phinxlog` (`version`, `migration_name`, `start_time`, `end_time`, `breakpoint`) VALUES ('20250924205534', 'CreateUsers', '2025-09-24 21:28:27', '2025-09-24 21:28:27', '0');
+2025-09-24 21:28:27 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:28:27 debug: connection= role=write duration=0.4 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'examenes_db'
+2025-09-24 21:28:27 debug: connection= role=write duration=22.7 rows=0 CREATE TABLE `reactivos` (`id` INTEGER NOT NULL AUTO_INCREMENT, `pregunta` TEXT NOT NULL, `respuesta_a` VARCHAR(500) NOT NULL, `respuesta_b` VARCHAR(500) NOT NULL, `respuesta_c` VARCHAR(500) NOT NULL, `respuesta_correcta` VARCHAR(1) NOT NULL, `retroalimentacion` TEXT, `dificultad` INTEGER NOT NULL DEFAULT 1, `area_especialidad` VARCHAR(100) NOT NULL, `subespecialidad` VARCHAR(100) NOT NULL, `user_id` INTEGER NOT NULL, `created` DATETIME, `modified` DATETIME, PRIMARY KEY (`id`),  KEY `IDX_REACTIVOS_USER_ID` (`user_id`)) ENGINE = InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+2025-09-24 21:28:27 debug: connection= role=write duration=57.6 rows=0 ALTER TABLE `reactivos` ADD  CONSTRAINT `FK_REACTIVOS_USERS` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
+2025-09-24 21:28:27 debug: connection= role=write duration=2.2 rows=1 INSERT INTO `phinxlog` (`version`, `migration_name`, `start_time`, `end_time`, `breakpoint`) VALUES ('20250924205725', 'CreateReactivos', '2025-09-24 21:28:27', '2025-09-24 21:28:27', '0');
+2025-09-24 21:28:27 debug: connection= role=write duration=1 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:28:27 debug: connection= role=write duration=14.9 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.5 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.7 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:28:27 debug: connection= role=write duration=0.5 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:28:27 debug: connection= role=write duration=5.2 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.5 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:28:27 debug: connection= role=write duration=0.7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:28:27 debug: connection= role=write duration=0.5 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:32:31 debug: connection= role=write duration=0.1 rows=0 USE `examenes_db`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:32:31 debug: connection= role=write duration=9.9 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:32:31 debug: connection= role=write duration=2.4 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.1 rows=0 USE `examenes_db`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.4 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:32:31 debug: connection= role=write duration=2.5 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:32:31 debug: connection= role=write duration=2.6 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.3 rows=2 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:32:31 debug: connection= role=write duration=0.1 rows=2 SELECT * FROM `phinxlog` ORDER BY version ASC
+2025-09-24 21:32:31 debug: connection= role=write duration=0.4 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:32:31 debug: connection= role=write duration=2.5 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.5 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.6 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:32:31 debug: connection= role=write duration=0.3 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:32:31 debug: connection= role=write duration=3.3 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:32:31 debug: connection= role=write duration=0.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:32:31 debug: connection= role=write duration=0.5 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:33:13 debug: connection= role=write duration=0.1 rows=0 USE `examenes_db`
+2025-09-24 21:33:13 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:33:13 debug: connection= role=write duration=10.9 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:33:13 debug: connection= role=write duration=3.5 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:33:13 debug: connection= role=write duration=0.2 rows=0 USE `examenes_db`
+2025-09-24 21:33:13 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:33:13 debug: connection= role=write duration=2.8 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:33:13 debug: connection= role=write duration=3.5 rows=5 SHOW COLUMNS FROM `phinxlog`
+2025-09-24 21:33:13 debug: connection= role= duration=0 rows=0 BEGIN
+2025-09-24 21:33:13 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:33:13 debug: connection= role=write duration=0.3 rows=1 INSERT INTO `users` (`email`, `password`, `role`, `active`, `created`, `modified`) VALUES ('admin@example.com', '$2y$10$T9h5IP3/T1pJM1N0Z419zOLyv9I1NmqHkGvTEaK9hdMjPsHE8nBxq', 'administrador', '1', '2025-09-24 21:33:13', '2025-09-24 21:33:13')
+2025-09-24 21:33:13 debug: connection= role= duration=0 rows=0 COMMIT
+2025-09-24 21:37:42 debug: connection= role=write duration=0.4 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:37:42 debug: connection= role=write duration=10.2 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:37:42 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:37:42 debug: connection= role=write duration=0.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:42 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:37:42 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:37:42 debug: connection= role=write duration=3 rows=5 SHOW FULL COLUMNS FROM `phinxlog`
+2025-09-24 21:37:42 debug: connection= role=write duration=0.4 rows=1 SHOW INDEXES FROM `phinxlog`
+2025-09-24 21:37:42 debug: connection= role=write duration=0.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'phinxlog' AND rc.TABLE_NAME = 'phinxlog'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:42 debug: connection= role=write duration=0.5 rows=1 SHOW TABLE STATUS WHERE Name = 'phinxlog'
+2025-09-24 21:37:42 debug: connection= role=write duration=3.3 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:37:42 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:37:42 debug: connection= role=write duration=0.9 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:42 debug: connection= role=write duration=0.6 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:37:44 debug: connection= role=write duration=9.1 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:37:44 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:37:44 debug: connection= role=write duration=0.5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:44 debug: connection= role=write duration=0.5 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:37:44 debug: connection= role=write duration=3.5 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:37:44 debug: connection= role=write duration=0.5 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:37:44 debug: connection= role=write duration=0.5 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:44 debug: connection= role=write duration=0.5 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:37:54 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:37:54 debug: connection= role=write duration=20 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.6 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:54 debug: connection= role=write duration=0.3 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:37:54 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:37:54 debug: connection= role=write duration=3.3 rows=5 SHOW FULL COLUMNS FROM `phinxlog`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.3 rows=1 SHOW INDEXES FROM `phinxlog`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'phinxlog' AND rc.TABLE_NAME = 'phinxlog'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:54 debug: connection= role=write duration=0.6 rows=1 SHOW TABLE STATUS WHERE Name = 'phinxlog'
+2025-09-24 21:37:54 debug: connection= role=write duration=2.9 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:54 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:37:54 debug: connection= role=write duration=3.9 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.5 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:54 debug: connection= role=write duration=0.2 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:37:54 debug: connection= role=write duration=4.3 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.7 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:54 debug: connection= role=write duration=0.8 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:37:54 debug: connection= role=write duration=5.4 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.6 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:37:54 debug: connection= role=write duration=0.9 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:37:54 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:38:24 debug: connection= role=write duration=19.4 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:38:24 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:38:24 debug: connection= role=write duration=0.7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:38:24 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:38:24 debug: connection= role=write duration=0.4 rows=1 SELECT Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM users Users LIMIT 20 OFFSET 0
+2025-09-24 21:38:25 debug: connection= role=write duration=0.6 rows=1 SELECT (COUNT(*)) AS count FROM users Users
+2025-09-24 21:38:46 debug: connection= role=write duration=10.5 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:38:46 debug: connection= role=write duration=0.6 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:38:46 debug: connection= role=write duration=0.5 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:38:46 debug: connection= role=write duration=0.3 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:38:46 debug: connection= role=write duration=0.5 rows=0 SELECT Reactivos.id AS Reactivos__id, Reactivos.pregunta AS Reactivos__pregunta, Reactivos.respuesta_a AS Reactivos__respuesta_a, Reactivos.respuesta_b AS Reactivos__respuesta_b, Reactivos.respuesta_c AS Reactivos__respuesta_c, Reactivos.respuesta_correcta AS Reactivos__respuesta_correcta, Reactivos.retroalimentacion AS Reactivos__retroalimentacion, Reactivos.dificultad AS Reactivos__dificultad, Reactivos.area_especialidad AS Reactivos__area_especialidad, Reactivos.subespecialidad AS Reactivos__subespecialidad, Reactivos.user_id AS Reactivos__user_id, Reactivos.created AS Reactivos__created, Reactivos.modified AS Reactivos__modified, Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM reactivos Reactivos INNER JOIN users Users ON Users.id = Reactivos.user_id LIMIT 20 OFFSET 0
+2025-09-24 21:38:46 debug: connection= role=write duration=0.5 rows=1 SELECT (COUNT(*)) AS count FROM reactivos Reactivos INNER JOIN users Users ON Users.id = Reactivos.user_id
+2025-09-24 21:40:11 debug: connection= role=write duration=0.6 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:40:16 debug: connection= role=write duration=18.8 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.6 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:16 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:40:16 debug: connection= role=write duration=0.4 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-24 21:40:16 debug: connection= role=write duration=2.9 rows=5 SHOW FULL COLUMNS FROM `phinxlog`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=1 SHOW INDEXES FROM `phinxlog`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'phinxlog' AND rc.TABLE_NAME = 'phinxlog'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=1 SHOW TABLE STATUS WHERE Name = 'phinxlog'
+2025-09-24 21:40:16 debug: connection= role=write duration=4.3 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:40:16 debug: connection= role=write duration=3.1 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:40:16 debug: connection= role=write duration=5.3 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.7 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:16 debug: connection= role=write duration=0.7 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:40:16 debug: connection= role=write duration=3.6 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:40:16 debug: connection= role=write duration=0.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:16 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:40:28 debug: connection= role=write duration=21.2 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-24 21:40:28 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-24 21:40:28 debug: connection= role=write duration=0.5 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:28 debug: connection= role=write duration=0.6 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-24 21:40:28 debug: connection= role=write duration=4.2 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:40:28 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:40:28 debug: connection= role=write duration=0.7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:40:28 debug: connection= role=write duration=0.4 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:40:28 debug: connection= role=write duration=0.3 rows=0 SELECT Reactivos.id AS Reactivos__id, Reactivos.pregunta AS Reactivos__pregunta, Reactivos.respuesta_a AS Reactivos__respuesta_a, Reactivos.respuesta_b AS Reactivos__respuesta_b, Reactivos.respuesta_c AS Reactivos__respuesta_c, Reactivos.respuesta_correcta AS Reactivos__respuesta_correcta, Reactivos.retroalimentacion AS Reactivos__retroalimentacion, Reactivos.dificultad AS Reactivos__dificultad, Reactivos.area_especialidad AS Reactivos__area_especialidad, Reactivos.subespecialidad AS Reactivos__subespecialidad, Reactivos.user_id AS Reactivos__user_id, Reactivos.created AS Reactivos__created, Reactivos.modified AS Reactivos__modified, Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM reactivos Reactivos INNER JOIN users Users ON Users.id = Reactivos.user_id LIMIT 20 OFFSET 0
+2025-09-24 21:40:28 debug: connection= role=write duration=0.2 rows=1 SELECT (COUNT(*)) AS count FROM reactivos Reactivos INNER JOIN users Users ON Users.id = Reactivos.user_id
+2025-09-24 21:47:33 debug: connection= role=write duration=10.7 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-24 21:47:33 debug: connection= role=write duration=0.4 rows=2 SHOW INDEXES FROM `users`
+2025-09-24 21:47:33 debug: connection= role=write duration=0.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-24 21:47:33 debug: connection= role=write duration=0.2 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-24 21:47:33 debug: connection= role=write duration=0.5 rows=1 SELECT Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM users Users WHERE Users.email = 'admin@example.com' LIMIT 1
+2025-09-24 21:47:34 debug: connection= role=write duration=0.5 rows=1 SELECT Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM users Users LIMIT 20 OFFSET 0
+2025-09-24 21:47:34 debug: connection= role=write duration=0.4 rows=1 SELECT (COUNT(*)) AS count FROM users Users
+2025-09-27 01:01:23 debug: connection= role=write duration=7.3 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-27 01:01:24 debug: connection= role=write duration=19.6 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-27 01:01:24 debug: connection= role=write duration=0.9 rows=2 SHOW INDEXES FROM `users`
+2025-09-27 01:01:24 debug: connection= role=write duration=1.5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 01:01:24 debug: connection= role=write duration=0.9 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-27 01:01:24 debug: connection= role=write duration=1.7 rows=3 SHOW FULL TABLES FROM `examenes_db` WHERE TABLE_TYPE IN ('BASE TABLE', 'VIEW')
+2025-09-27 01:01:24 debug: connection= role=write duration=6.9 rows=5 SHOW FULL COLUMNS FROM `phinxlog`
+2025-09-27 01:01:24 debug: connection= role=write duration=0.5 rows=1 SHOW INDEXES FROM `phinxlog`
+2025-09-27 01:01:24 debug: connection= role=write duration=1.4 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'phinxlog' AND rc.TABLE_NAME = 'phinxlog'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 01:01:24 debug: connection= role=write duration=1.1 rows=1 SHOW TABLE STATUS WHERE Name = 'phinxlog'
+2025-09-27 01:01:24 debug: connection= role=write duration=11.7 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-27 01:01:24 debug: connection= role=write duration=0.9 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-27 01:01:24 debug: connection= role=write duration=1.9 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 01:01:24 debug: connection= role=write duration=1.2 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-27 01:01:30 debug: connection= role=write duration=21 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-27 01:01:30 debug: connection= role=write duration=0.8 rows=2 SHOW INDEXES FROM `users`
+2025-09-27 01:01:30 debug: connection= role=write duration=1.7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 01:01:30 debug: connection= role=write duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-27 01:01:51 debug: connection= role=write duration=34 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-27 01:01:51 debug: connection= role=write duration=0.5 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-27 01:01:51 debug: connection= role=write duration=1.7 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 01:01:51 debug: connection= role=write duration=1.1 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-27 01:55:18 debug: connection= role=write duration=25.6 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-27 01:55:18 debug: connection= role=write duration=1 rows=2 SHOW INDEXES FROM `users`
+2025-09-27 01:55:18 debug: connection= role=write duration=1.6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 01:55:18 debug: connection= role=write duration=1.1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-27 01:55:18 debug: connection= role=write duration=1.8 rows=0 SELECT Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM users Users WHERE Users.email = 'examenes_usr@g.com' LIMIT 1
+2025-09-27 01:57:17 debug: connection= role=write duration=0.4 rows=1 SELECT Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM users Users WHERE Users.email = 'admin@example.com' LIMIT 1
+2025-09-27 02:01:10 debug: connection= role=write duration=10.3 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-27 02:01:10 debug: connection= role=write duration=0.6 rows=2 SHOW INDEXES FROM `users`
+2025-09-27 02:01:10 debug: connection= role=write duration=0.8 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 02:01:10 debug: connection= role=write duration=0.7 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-27 02:01:10 debug: connection= role=write duration=0.6 rows=1 SELECT (COUNT(*)) AS count FROM users Users
+2025-09-27 02:01:10 debug: connection= role=write duration=5.1 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-27 02:01:10 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-27 02:01:10 debug: connection= role=write duration=1.1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 02:01:10 debug: connection= role=write duration=0.7 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-27 02:01:10 debug: connection= role=write duration=0.2 rows=1 SELECT (COUNT(*)) AS count FROM reactivos Reactivos
+2025-09-27 02:01:10 debug: connection= role=write duration=0.6 rows=0 SELECT Reactivos.area_especialidad AS Reactivos__area_especialidad, (COUNT(*)) AS count FROM reactivos Reactivos GROUP BY area_especialidad 
+2025-09-27 02:17:14 debug: connection= role=write duration=30.6 rows=7 SHOW FULL COLUMNS FROM `users`
+2025-09-27 02:17:14 debug: connection= role=write duration=0.8 rows=2 SHOW INDEXES FROM `users`
+2025-09-27 02:17:14 debug: connection= role=write duration=1.8 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 02:17:14 debug: connection= role=write duration=0.9 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2025-09-27 02:17:14 debug: connection= role=write duration=0.4 rows=1 SELECT (COUNT(*)) AS count FROM users Users
+2025-09-27 02:17:14 debug: connection= role=write duration=6.2 rows=13 SHOW FULL COLUMNS FROM `reactivos`
+2025-09-27 02:17:14 debug: connection= role=write duration=0.3 rows=2 SHOW INDEXES FROM `reactivos`
+2025-09-27 02:17:14 debug: connection= role=write duration=1.2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'examenes_db' AND kcu.TABLE_NAME = 'reactivos' AND rc.TABLE_NAME = 'reactivos'
+            ORDER BY kcu.ORDINAL_POSITION ASC
+2025-09-27 02:17:14 debug: connection= role=write duration=0.5 rows=1 SHOW TABLE STATUS WHERE Name = 'reactivos'
+2025-09-27 02:17:14 debug: connection= role=write duration=0.4 rows=1 SELECT (COUNT(*)) AS count FROM reactivos Reactivos
+2025-09-27 02:17:14 debug: connection= role=write duration=0.5 rows=0 SELECT Reactivos.area_especialidad AS Reactivos__area_especialidad, (COUNT(*)) AS count FROM reactivos Reactivos GROUP BY area_especialidad 
+2025-09-27 02:17:19 debug: connection= role=write duration=0.4 rows=1 SELECT (COUNT(*)) AS count FROM users Users
+2025-09-27 02:17:19 debug: connection= role=write duration=0.5 rows=1 SELECT (COUNT(*)) AS count FROM reactivos Reactivos
+2025-09-27 02:17:19 debug: connection= role=write duration=0.4 rows=0 SELECT Reactivos.area_especialidad AS Reactivos__area_especialidad, (COUNT(*)) AS count FROM reactivos Reactivos GROUP BY area_especialidad 
+2025-09-27 02:17:21 debug: connection= role=write duration=0.7 rows=0 SELECT Reactivos.id AS Reactivos__id, Reactivos.pregunta AS Reactivos__pregunta, Reactivos.respuesta_a AS Reactivos__respuesta_a, Reactivos.respuesta_b AS Reactivos__respuesta_b, Reactivos.respuesta_c AS Reactivos__respuesta_c, Reactivos.respuesta_correcta AS Reactivos__respuesta_correcta, Reactivos.retroalimentacion AS Reactivos__retroalimentacion, Reactivos.dificultad AS Reactivos__dificultad, Reactivos.area_especialidad AS Reactivos__area_especialidad, Reactivos.subespecialidad AS Reactivos__subespecialidad, Reactivos.user_id AS Reactivos__user_id, Reactivos.created AS Reactivos__created, Reactivos.modified AS Reactivos__modified, Users.id AS Users__id, Users.email AS Users__email, Users.password AS Users__password, Users.role AS Users__role, Users.active AS Users__active, Users.created AS Users__created, Users.modified AS Users__modified FROM reactivos Reactivos INNER JOIN users Users ON Users.id = Reactivos.user_id LIMIT 20 OFFSET 0
+2025-09-27 02:17:21 debug: connection= role=write duration=0.5 rows=1 SELECT (COUNT(*)) AS count FROM reactivos Reactivos INNER JOIN users Users ON Users.id = Reactivos.user_id

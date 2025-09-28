@@ -1,0 +1,29 @@
+2025-09-24 21:28:27 notice: Since 4.6.0: setConstraint() is deprecated. Use setName() instead.
+C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Adapter\PhinxAdapter.php, line: 215
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/migrations/src/Db/Adapter/PhinxAdapter.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only. in C:\examenes_sistema\vendor\cakephp\cakephp\src\Core\functions.php on line 377
+Trace:
+Cake\Error\ErrorTrap->handleError() [internal], line ??
+C:\examenes_sistema\vendor\cakephp\cakephp\src\Core\functions.php C:\examenes_sistema\vendor\cakephp\cakephp\src\Core\functions.php, line 377
+C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Table\ForeignKey.php C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Table\ForeignKey.php, line 223
+Migrations\Db\Table\ForeignKey->setConstraint() C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Adapter\PhinxAdapter.php, line 215
+Migrations\Db\Adapter\PhinxAdapter->convertForeignKey() C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Adapter\PhinxAdapter.php, line 248
+Migrations\Db\Adapter\PhinxAdapter->convertAction() C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Adapter\PhinxAdapter.php, line 768
+Migrations\Db\Adapter\PhinxAdapter->Migrations\Db\Adapter\{closure}() [internal], line ??
+C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Adapter\PhinxAdapter.php C:\examenes_sistema\vendor\cakephp\migrations\src\Db\Adapter\PhinxAdapter.php, line 767
+Migrations\Db\Adapter\PhinxAdapter->executeActions() C:\examenes_sistema\vendor\robmorgan\phinx\src\Phinx\Db\Plan\Plan.php, line 152
+Phinx\Db\Plan\Plan->execute() C:\examenes_sistema\vendor\robmorgan\phinx\src\Phinx\Db\Table.php, line 725
+Phinx\Db\Table->executeActions() C:\examenes_sistema\vendor\robmorgan\phinx\src\Phinx\Db\Table.php, line 621
+Phinx\Db\Table->create() C:\examenes_sistema\vendor\cakephp\migrations\src\Table.php, line 146
+Migrations\Table->create() C:\examenes_sistema\config\Migrations\20250924205725_CreateReactivos.php, line 25
+CreateReactivos->change() C:\examenes_sistema\vendor\cakephp\migrations\src\Shim\MigrationAdapter.php, line 131
+Migrations\Shim\MigrationAdapter->applyDirection() C:\examenes_sistema\vendor\cakephp\migrations\src\Migration\Environment.php, line 99
+Migrations\Migration\Environment->executeMigration() C:\examenes_sistema\vendor\cakephp\migrations\src\Migration\Manager.php, line 449
+Migrations\Migration\Manager->executeMigration() C:\examenes_sistema\vendor\cakephp\migrations\src\Migration\Manager.php, line 420
+Migrations\Migration\Manager->migrate() C:\examenes_sistema\vendor\cakephp\migrations\src\Command\MigrateCommand.php, line 170
+Migrations\Command\MigrateCommand->executeMigrations() C:\examenes_sistema\vendor\cakephp\migrations\src\Command\MigrateCommand.php, line 111
+Migrations\Command\MigrateCommand->execute() C:\examenes_sistema\vendor\cakephp\cakephp\src\Console\BaseCommand.php, line 201
+Cake\Console\BaseCommand->run() C:\examenes_sistema\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 338
+Cake\Console\CommandRunner->runCommand() C:\examenes_sistema\vendor\cakephp\cakephp\src\Console\CommandRunner.php, line 168
+Cake\Console\CommandRunner->run() C:\examenes_sistema\bin\cake.php, line 10
+[main]
+
